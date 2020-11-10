@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Reserva Hotel</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Formulario hotel">
+        <meta name="keywords" content="html, CSS, LDM">
+        <meta name="author" content="Miguel Rodriguez">
+
+        <style>
+            fieldset {max-width: 500px;}
+            body {color: whitesmoke;}
+            body {background-color: #222222;}
+            head {color: whitesmoke;}
+            p {color: whitesmoke;}
+            h1 {color: whitesmoke;}
+            a {color: wheat;}
+            form {color: whitesmoke;}
+            legend {color: white;
+                    background-color: black;}
+        </style>
+    </head>
+
+    <body>
+        <header> 
+            <h1 align="center">Reserva Hotel</h1>
+        </header>
+
+        <form action="mailto:reservas@mihotel.com" method="POST" enctype="text/plain">
+            <fieldset>
+                <legend>Reserva de habitaciones</legend>
+            <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" >
+
+            <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos"><br><br>
+
+            <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono">
+            
+            <label for="mail">Email:</label>
+                <input type="text" id="mail" name="email"><br><br>
+
+            <label for="noches">Noches:</label>
+                <input type="number" id="noches" min="1" max="365" name="noches"><br><br>
+
+            <label for="entrada">Fecha de entrada:</label>
+                <select name="dia-entrada" id="entrada">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <select name="mes-entrada" id="entrada">
+                    <option value="enero">Enero</option>
+                    <option value="febr">Febrero</option>
+                    <option value="mar">Marzo</option>
+                    <option value="abr">Abril</option>
+                    <option value="may">Mayo</option>
+                    <option value="jun">Junio</option>
+                    <option value="jul">Julio</option>
+                    <option value="ago">Agosto</option>
+                    <option value="sept">Septiembre</option>
+                    <option value="oct">Octubre</option>
+                    <option value="nov">Noviembre</option>
+                    <option value="dic">Diciembre</option>
+                </select>
+            <br><br>
+
+            <u><b>Tipo de Habitación: </b></u> <br>
+            <input type="radio" id="simple" name="tipo-habitacion" value="simple">
+                <label for="simple">Simple</label><br>
+
+            <input type="radio" id="doble" name="tipo-habitacion" value="doble">
+                <label for="simple">Doble</label><br>
+
+            <input type="radio" id="matrimonio" name="tipo-habitacion" value="matrimonio">
+                <label for="simple">Matrimonio</label><br><br>
+            <u><b>Servicios adicionales</b></u> <br>
+            <input type="checkbox" id="desayuno" name="desayuno" value="SI">
+                <label for="desayuno">Desayuno</label><br>
+            <input type="checkbox" id="comida" name="comida" value="SI">
+                <label for="comida">Comida</label><br>
+            <input type="checkbox" id="cena" name="cena" value="SI">
+                <label for="cena">Cena</label><br>
+            <input type="checkbox" id="supletoria" name="supletoria" value="SI">
+                <label for="supletoria">Cama supletoria</label><br><br>
+            <label for="comentarios"><u><b>Comentarios</b></u></label><br>
+                <textarea name="comentarios" id="comentarios" cols="55" rows="5"></textarea>
+            <pre><input type="reset" value="Limpiar">       <input type="submit" value="Enviar reserva"></pre>
+
+        </fieldset>        
+        </form>
+    </body>
+</html>
