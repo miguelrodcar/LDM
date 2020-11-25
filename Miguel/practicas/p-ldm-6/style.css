@@ -22,10 +22,10 @@ h1 {
     color: #ffdfb3;
 }
 .orange {
-    font-family: 'Arial';
+    font-family: 'Manual Mono TF', Helvetica;
     letter-spacing: 2px ;
     font-size: 25px;
-    color: orange;
+    color: #ff9845;
 }
 
 .csans {
