@@ -1,0 +1,35 @@
+body {
+    background-color: #2d8652;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    font-size: 46px;
+    font-family: Arial;
+}
+
+.italic {
+    font-size: 22px;
+    font-style: italic;
+    color: white;
+}
+.narrow {
+    font-size: 22px;
+    font-family: 'Arial';
+    color: #ffdfb3;
+}
+.orange {
+    font-family: 'Arial';
+    letter-spacing: 2px ;
+    font-size: 25px;
+    color: orange;
+}
+
+.csans {
+    font-family: 'Comic Sans MS';
+    font-size: 22px;
+    color: #e6194d;
+}

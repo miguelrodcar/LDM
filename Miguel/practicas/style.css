@@ -1,0 +1,71 @@
+body {
+    background-color: #222222;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.clrblk {
+    background-color: #333333;
+}
+
+.url {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+a {
+    color: wheat;
+}
+
+a:hover {
+    color: rgb(207, 144, 60);
+}
+
+a:active {
+    color: whitesmoke;
+}
+
+a:visited {
+    color: rgb(145, 116, 79);
+}
+
+p {
+    margin: 5%;
+}
+
+ol {
+    margin: 5%;
+}
+
+.grid {
+    margin: 5%;
+    
+
+}
+.col {
+    border: px solid white;
+    border-collapse: collapse;
+}
+.col-sm {
+    border: 2px solid white;
+}
+.row {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+#header_img {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: white solid 5px;
+    border-radius: 10%;
+}
+
+.first_h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
