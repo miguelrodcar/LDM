@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "monoton";
+    src: url("fonts/monoton.woff2");
+}
+
+body {
+    background: url("img/matrix.png") right repeat;
+    color: white;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    
+    font-size: 240%;
+    letter-spacing: 1rem;
+    margin-top: -0.5%;
+    color: lawngreen;
+    font-family: "monoton";
+    text-decoration: underline;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    border-bottom: 1px solid lawngreen;
+}
+
+.black {
+    background-color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.game {
+    display:inline;
+    margin: 1em;
+    box-shadow: 0 0 0 4px #fff,
+                0 0 0 8px #05c705;
+}
+
+.pong {
+    width: 20%;
+    float:right;
+}
+
+.sinv {
+    width: 15%;
+    float: left;
+}
+
+.pac {
+    width: 15%;
+    float: right;
+}
+.text{
+    display: inline;
+    margin-top:30px;
+}
+.text p{
+    float:left;
+    margin:0px;
+    clear:both;
+}
+
+table {
+    border: 2px solid white;
+    margin: 3em;
+}
+th {
+    text-align: left;
+    background-color: #05c705;
+    letter-spacing: 0.7rem;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-size: 150%;
+    border-bottom: 1px solid white;
+}
+
+.title {
+    color: yellow;
+}
+
+.name {
+    color: red;
+}
+
+.date {
+    color: #04b304;
+}
+
+address {
+    border-top: 2px solid #05c705;
+    border-bottom: 2px solid #05c705;
+    font-style: normal;
+}
