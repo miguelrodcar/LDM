@@ -4,25 +4,35 @@
 }
 
 body {
-    background: url("img/matrix.png") right repeat;
     color: white;
+    background-color: black;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
 }
+.left {
+    background: url(img/matrix.png) left repeat-y;
+}
+.right {
+    background: url(img/matrix2.png) right repeat-y;
+    background-size: 131px;
+}
 h1 {
-    
-    font-size: 240%;
+    font-size: 210%;
     letter-spacing: 1rem;
     margin-top: -0.5%;
     color: lawngreen;
     font-family: "monoton";
     text-decoration: underline;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: center;
-    border-bottom: 1px solid lawngreen;
+    white-space: nowrap;
 }
-
+hr {
+    color: lawngreen;
+    margin-right: 15%;
+    margin-left: 15%;
+}
 .black {
     background-color: black;
     margin-left: 5%;
@@ -30,35 +40,13 @@ h1 {
 }
 
 .game {
-    display:inline;
     margin: 1em;
     box-shadow: 0 0 0 4px #fff,
                 0 0 0 8px #05c705;
 }
 
-.pong {
-    width: 20%;
-    float:right;
-}
 
-.sinv {
-    width: 15%;
-    float: left;
-}
 
-.pac {
-    width: 15%;
-    float: right;
-}
-.text{
-    display: inline;
-    margin-top:30px;
-}
-.text p{
-    float:left;
-    margin:0px;
-    clear:both;
-}
 
 table {
     border: 2px solid white;
@@ -90,4 +78,40 @@ address {
     border-top: 2px solid #05c705;
     border-bottom: 2px solid #05c705;
     font-style: normal;
+}
+
+.leftxt {
+    display: inline;
+    float: left;
+    
+}
+
+.rightxt {
+    display: inline;
+    float: right;
+    overflow: hidden;
+}
+
+.imgleft {
+    display: inline;
+    float: left;
+}
+
+.imgright {
+    display: inline;
+    float: right;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.columnl {
+    display: inline-block;
+    float: left;
+}
+.columnr {
+    display: inline-block;
+    float: right;
 }
