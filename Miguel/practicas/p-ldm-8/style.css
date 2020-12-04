@@ -1,0 +1,35 @@
+.leftbg {
+    background: url(fondos/corazon-1.svg) left repeat-y ;
+    background-size: 5%;
+}
+
+.rightbg {
+    background: url(fondos/corazon-2.svg) right repeat-y;
+    background-size: 5%;
+}
+body {
+    background-color: #ffebf0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+body {
+    background-image: url(fondos/corazon-1.svg);
+    background-image: url(fondos/corazon-2.svg);
+    background-size: 30px;
+    background-position:left, right;
+    background-repeat: repeat-y;
+}
+*/
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.borde {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    border: 1px solid black;
+}
