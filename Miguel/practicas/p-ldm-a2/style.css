@@ -8,6 +8,7 @@ body {
     background-color: black;
     font-size: 16px;
     font-family: 'Courier New', Courier, monospace;
+    
 }
 .left {
     background: url(img/matrix.png) left repeat-y;
@@ -33,6 +34,8 @@ hr {
     margin-right: 15%;
     margin-left: 15%;
 }
+
+}
 .black {
     background-color: black;
     margin-left: 5%;
@@ -45,14 +48,7 @@ hr {
                 0 0 0 8px #05c705;
 }
 
-
-
-
-table {
-    border: 2px solid white;
-    margin: 3em;
-}
-th {
+h3 {
     text-align: left;
     background-color: #05c705;
     letter-spacing: 0.7rem;
@@ -60,6 +56,7 @@ th {
     font-variant: small-caps;
     font-size: 150%;
     border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
 
 .title {
@@ -80,38 +77,33 @@ address {
     font-style: normal;
 }
 
-.leftxt {
-    display: inline;
-    float: left;
-    
-}
-
-.rightxt {
-    display: inline;
-    float: right;
-    overflow: hidden;
-}
-
-.imgleft {
-    display: inline;
-    float: left;
-}
-
-.imgright {
-    display: inline;
-    float: right;
-}
-
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    background-color: black;
 }
-.columnl {
+.gameborder {
+    border: 1px solid white;
+    border-top: none;
+}
+.txtright {
+    width: 65%;
+    display: inline-block;
+}
+.txtleft {
+    width: 65%;
+    display: inline-block
+}
+.imgright {
+    display: inline-block;
+    float: right;
+}
+.imgleft {
     display: inline-block;
     float: left;
 }
-.columnr {
-    display: inline-block;
-    float: right;
+.emoji {
+    font-size: 200%;
+    text-align: center;
+    color: lawngreen;
 }
