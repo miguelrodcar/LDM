@@ -1,0 +1,79 @@
+.fondo-izq {
+    background: url(./chip-arriba.jpg) left repeat-y;
+}
+
+.fondo-der {
+    background: url(./chip-abajo.jpg) right repeat-y;
+}
+.fondo-texto {
+    background-color: #acdae4;
+}
+.previa {
+    margin-left: 15%;
+    margin-right: 15%;
+    
+} 
+.previa::first-letter {
+    float: left;
+    font-size: 80px;
+    line-height: 75px;
+    color: blue;
+}
+
+h1 {
+    text-transform: uppercase ;
+    text-align: center;
+    letter-spacing: .5em;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.contenido {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.moore {
+    float: left;
+    width: 200px;
+    box-shadow: 0 0 0 4px #fff,
+                0 0 0 6px #000;
+}
+.foto {
+    float: left;
+    box-shadow: 0 0 0 4px #fff,
+                0 0 0 6px #000;
+}
+
+
+h2 {
+    font-family: monospace;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+.textohdd {
+    background-color: #acdae4;
+    width: 80%;
+    height: auto;
+
+    float: right;
+
+
+}
+
+
+
+.procesadores {
+    margin-left: 250px;
+    background-color: #acdae4;
+
+}
+
+.h2-proc{
+    margin-left: 250px;
+}
+
+.fotosw {
+    float: left;
+}
