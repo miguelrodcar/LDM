@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "vt323";
+    src: url("./VT323.woff");
+}
+.fondo-logos {
+    background: url(./logos-empresas.svg) repeat-x top;
+}
+
+body {
+    background-color: #aca23c;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "vt323";
+    padding-top: 5%;
+    font-size: 350%;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-shadow: -2px 2px white;
+    color: #554d00;
+}
+h1::after {
+    content: "🤣";
+    float: right;
+    text-shadow: none;
+
+}
+.contenido {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+p.introd {
+    text-align: justify;
+}
+
+.botonera {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+.boton {
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px solid white;
+
+}
+.btnext {
+    margin-left: 5%;
+}
+
+hr {
+    border: 3px solid #554d00;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    background-color: #554d00;
+    margin: 0;
+}
+.msoft {
+    background-color: white;
+    border: 3px solid #554d00;
+    height: 300px;
+}
+.msoft-img {
+    float: left;
+    height: 300px;
+    margin-left: 3%;
+    margin-top: 3%;
+    box-shadow: 0 0 0 10px #aca23c,
+                0 0 0 16px #554d00;
+}
+.msoft-p {
+    text-align: justify;
+    margin-left: 50%;
+    padding: 2%;
+    
+}
+
+.ggl {
+    background-color: white;
+    border: 3px solid #554d00;
+    height: 300px;
+}
+.ggl-img {
+    float: right;
+    height: 300px;
+    margin-right: 3%;
+    margin-top: 3%;
+    box-shadow: 0 0 0 10px #aca23c,
+                0 0 0 16px #554d00;
+}
+
+.ggl-p {
+    margin-right: 50%;
+    text-align: justify;
+    padding: 1%;
+}
+
+.apple {
+    background-color: white;
+    border: 3px solid #554d00;
+    height: 220px;
+}
+.apple-img {
+    float: left;
+    height: 220px;
+    margin-left: 3%;
+    margin-top: 3%;
+    box-shadow: 0 0 0 10px #aca23c,
+                0 0 0 16px #554d00;
+}
+.apple-p {
+    text-align: justify;
+    margin-left: 40%;
+    padding: 2%;
+    
+}
+
+.compara {
+    background-color: white;
+    border: 3px solid #554d00;
+    height: 300px;
+}
+.compara-img {
+    float: right;
+    height: 300px;
+    margin-right: 3%;
+    margin-top: 3%;
+    box-shadow: 0 0 0 10px #aca23c,
+                0 0 0 16px #554d00;
+}
+
+.compara-p {
+    margin-right: 50%;
+    text-align: justify;
+    padding: 1%;
+}
