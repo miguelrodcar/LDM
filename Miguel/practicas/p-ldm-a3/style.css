@@ -53,10 +53,12 @@ p.introd {
 
 hr {
     border: 3px solid #554d00;
+
+}
+.hr-arriba {
     margin-left: 25%;
     margin-right: 25%;
 }
-
 h2 {
     color: white;
     font-weight: bold;
@@ -142,4 +144,15 @@ h2 {
     margin-right: 50%;
     text-align: justify;
     padding: 1%;
+}
+
+address {
+    text-align: right;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: gray;
 }
