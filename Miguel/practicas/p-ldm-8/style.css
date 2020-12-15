@@ -1,15 +1,17 @@
 .leftbg {
     background: url(fondos/corazon-1.svg) left repeat-y ;
-    background-size: 5%;
+    background-size: 4.5%;
 }
 
 .rightbg {
     background: url(fondos/corazon-2.svg) right repeat-y;
-    background-size: 5%;
+    background-size: 4.5%;
+
 }
 body {
     background-color: #ffebf0;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 /* 
 body {
@@ -24,12 +26,63 @@ body {
 h1 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 120%;
+    padding-top: 1%;
+    font-weight: bold;
+}
+p {
+    margin-left: 40%;
+    margin-right: 40%;
+    font-weight: bold;
+    text-align: center;
 }
 
+.parrafos {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.blanco {
+    color: white;
+}
+.amarillo {
+    color: yellow;
+}
+.rojo {
+    color: maroon;
+}
+.verde {
+    color: green;
+}
 .borde {
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
     text-align: center;
     border: 1px solid black;
+    margin-top: 1%;
+    
+    
+}
+.mancha {
+    background:url(fondos/manchas.png);
+}
+
+.tallos {
+    background: 
+    url(fondos/fuego.svg) left bottom no-repeat,
+    url(fondos/fuego.svg) right bottom no-repeat,
+    url(fondos/tallos.jpg) left top repeat;
+    
+}
+.hexag {
+    background: 
+    url(fondos/ojo.svg) center no-repeat,
+    url(fondos/hexagonos.jpg) left top repeat;
+}
+
+.stars {
+    background: 
+    url(fondos/caballo.svg) left bottom repeat-x,
+    url(fondos/estrellas.png) left top repeat;
+    background-size: 3%, auto;
 }
