@@ -1,0 +1,63 @@
+{
+    "Nombre": "Sopa de cebolla",
+    "Comensales": "4",
+    "Ingredientes":[
+
+        {
+            "Nombre": "Cebollas",
+            "Cantidad": "1",
+            "Valor": "Kilos"
+        },
+        {
+            "Nombre": "Caldo de carne",
+            "Cantidad": "2",
+            "Valor": "Litros"
+        },
+        {
+            "Nombre": "Mantequilla",
+            "Cantidad": "100",
+            "Valor": "Gramos"
+        },
+        {
+            "Nombre": "Harina",
+            "Cantidad": "1",
+            "Valor": "Cucharada"
+        },
+        {
+            "Nombre": "Queso emmental suizo o gruyére rallado",
+            "Cantidad": "100",
+            "Valor": "Gramos"
+        },
+        {
+            "Nombre": "Pan tostado en rebanadas",
+            "Cantidad": "-",
+            "Valor": "Unidades"
+        },
+        {
+            "Nombre": "Tomillo",
+            "Cantidad": "-",
+            "Valor": "Gramos"
+        },
+        {
+            "Nombre": "Hoja de laurel",
+            "Cantidad": "1",
+            "Valor": "Hoja"
+        },
+        {
+            "Nombre": "Pimienta",
+            "Cantidad": "-",
+            "Valor": "Gramos"
+        }
+    ],
+    "Proceso":[
+        
+        {
+            "Primero": "Pelar y partir las cebollas en rodajas finas.",
+            "Segundo": "Rehogarlas con la mantequilla, sal y pimienta a fuego lento hasta que estén transparentes sin dorarse.",
+            "Tercero": "Añadir la harina sin dejar de remover.",
+            "Cuarto": "Ponerlo en una cazuela con el caldo, el tomillo y el laurel.",
+            "Quinto": "Dejar cocer a fuego lento durante unos 15 minutos.",
+            "Sexto": "Poner las rebanadas de pan encima, espolvorear el queso y gratinar al horno."
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ocio>
+<informacion>
+    <Ciudad>Palencia</Ciudad>
+    <Comunidad>Castilla y Leon</Comunidad>
+    <Provincia>Palencia</Provincia>
+    <Habitantes>78.000</Habitantes>
+</informacion>
+
+<bares>
+
+    <bar>
+        <nombre>LinaMorganFreeman</nombre>
+        <coste>Económico</coste>
+        <movilidad>No</movilidad>
+        <direccion>C/Rizarzuela, 8</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>5/5</recomendable>
+        <ubicacion>https://goo.gl/maps/M1j1Sb1Yirf5YP9K6</ubicacion>
+    </bar>
+
+    <bar>
+        <nombre>La Gomila</nombre>
+        <coste>Medio</coste>
+        <movilidad>No</movilidad>
+        <direccion>Calle Rizarzuela, 1</direccion>
+        <tipo>Pub</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://goo.gl/maps/Kj8nMDGvAeWDiwCL9</ubicacion>
+    </bar>
+
+    <bar>
+        <nombre>Café Bar La Galería</nombre>
+        <coste>Medio</coste>
+        <movilidad>Sí</movilidad>
+        <direccion>Calle Don Sancho, 11</direccion>
+        <tipo>Cafetería/Lounge</tipo>
+        <recomendable>5/5</recomendable>
+        <ubicacion>https://goo.gl/maps/337VAULrJktjzUo26</ubicacion>
+    </bar>
+
+    <bar>
+        <nombre>Martirio</nombre>
+        <coste>Medio</coste>
+        <movilidad>No</movilidad>
+        <direccion>Calle Alfonso VIII, 5</direccion>
+        <tipo>Pub/Copas</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://goo.gl/maps/Tk4Uve15QtHbgiVMA</ubicacion>
+    </bar>
+
+    <bar>
+        <nombre>Pizzería Kuró</nombre>
+        <coste>Medio</coste>
+        <movilidad>Sí</movilidad>
+        <direccion>Calle Batán de San Sebastián, 3</direccion>
+        <tipo>Restaurante</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://goo.gl/maps/Xo9jZL3eJMVNErBB7</ubicacion>
+    </bar>
+
+</bares>
+
+<actividades>
+
+    <actividad>
+        <nombre>Cines Teatro Ortega</nombre>
+        <movilidad>Sí</movilidad>
+        <direccion>Calle Colón, 2, BAJO</direccion>
+        <tipo>Teatro/Cine</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://goo.gl/maps/DXFG6L2h71cxyVtq7</ubicacion>
+    </actividad>
+    
+    <actividad>
+        <nombre>Complejo Deportivo Eras de Santa Marina</nombre>
+        <movilidad>Sí</movilidad>
+        <direccion>Calle San Antonio</direccion>
+        <tipo>Centro deportivo/Piscina</tipo>
+        <recomendable>5/5</recomendable>
+        <ubicacion>https://goo.gl/maps/ppKjBrQG5K9PSKfz5</ubicacion>
+    </actividad>
+
+    <actividad>
+        <nombre>Estadio Municipal Nueva Balastera</nombre>
+        <movilidad>Sí</movilidad>
+        <direccion>Calle de Lola de la Fuente, s/n</direccion>
+        <tipo>Estadio Deportivo</tipo>
+        <recomendable>4/5</recomendable>
+        <ubicacion>https://goo.gl/maps/NxenzqkYdRdErjVd7</ubicacion>
+    </actividad>
+
+</actividades>
+
+</ocio>
+

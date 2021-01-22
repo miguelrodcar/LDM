@@ -1,0 +1,79 @@
+{
+    "Ciudad": "Palencia",
+    "Comunidad": "Castilla y León",
+    "Provincia": "Palencia",
+    "Habitantes": "78.000",
+    "Bares": [
+        {
+            "Nombre": "LinaMorganFreeman",
+            "Coste": "Económico",
+            "Movilidad": "No",
+            "Direccion": "C/Rizarzuela, 8",
+            "Tipo": "Pub",
+            "Recomendable": "5/5",
+            "Ubicacion": "https://goo.gl/maps/M1j1Sb1Yirf5YP9K6"
+        },
+        {
+            "Nombre": "La Gomila",
+            "Coste": "Medio",
+            "Movilidad": "No",
+            "Direccion": "Calle Rizarzuela, 1",
+            "Tipo": "Pub",
+            "Recomendable": "4/5",
+            "Ubicacion": "https://goo.gl/maps/Kj8nMDGvAeWDiwCL9"
+        },
+        {
+            "Nombre": "Café Bar La Galería",
+            "Coste": "Medio",
+            "Movilidad": "Sí",
+            "Direccion": "Calle Don Sancho, 11",
+            "Tipo": "Cafetería/Lounge",
+            "Recomendable": "5/5",
+            "Ubicacion": "https://goo.gl/maps/337VAULrJktjzUo26"
+        },
+        {
+            "Nombre": "Martirio",
+            "Coste": "Medio",
+            "Movilidad": "No",
+            "Direccion": "Calle Alfonso VIII, 5",
+            "Tipo": "Pub/Copas",
+            "Recomendable": "4/5",
+            "Ubicacion": "https://goo.gl/maps/Tk4Uve15QtHbgiVMA"  
+        },
+        {
+            "Nombre": "Pizzería Kuró",
+            "Coste": "Medio",
+            "Movilidad": "Sí",
+            "Direccion": "Calle Batán de San Sebastián, 3",
+            "Tipo": "Restaurante",
+            "Recomendable": "4/5",
+            "Ubicacion": "https://goo.gl/maps/Xo9jZL3eJMVNErBB7"  
+        }
+    ],
+    "Ocio": [
+        {
+            "Nombre": "Cines Teatro Ortega",
+            "Movilidad": "",
+            "Direccion": "Calle Colón, 2, BAJO",
+            "Tipo": "Teatro/Cine",
+            "Recomendable": "4/5",
+            "Ubicacion": "https://goo.gl/maps/DXFG6L2h71cxyVtq7"  
+        },
+        {
+            "Nombre": "Complejo Deportivo Eras de Santa Marina",
+            "Movilidad": "Sí",
+            "Direccion": "Calle San Antonio",
+            "Tipo": "Centro deportivo/Piscina",
+            "Recomendable": "5/5",
+            "Ubicacion": "https://goo.gl/maps/ppKjBrQG5K9PSKfz5"  
+        },
+        {
+            "Nombre": "Estadio Municipal Nueva Balastera",
+            "Movilidad": "Sí",
+            "Direccion": "Calle de Lola de la Fuente, s/n",
+            "Tipo": "Estadio Deportivo ",
+            "Recomendable": "4/5",
+            "Ubicacion": "https://goo.gl/maps/NxenzqkYdRdErjVd7"  
+        }
+    ]
+}
