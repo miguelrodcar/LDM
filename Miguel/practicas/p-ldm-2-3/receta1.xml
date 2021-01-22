@@ -1,0 +1,13 @@
+<!--Incorrecto. Se modifica "Primera Receta" incluyendolo en titulo-->
+<!--Se añade llamada al dtd-->
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE receta SYSTEM "receta1.dtd">
+
+<receta>
+
+    <titulo>Primera receta</titulo>
+    <ingredientes>asdf</ingredientes>
+    <procedimiento>qwer</procedimiento>
+
+</receta>
+

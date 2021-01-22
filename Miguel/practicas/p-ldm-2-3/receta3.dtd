@@ -1,0 +1,6 @@
+<!--Incluidas declaraciones de titulo ingredientes y procedimiento-->
+
+<!ELEMENT receta (titulo, ingredientes, procedimiento)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT ingredientes (#PCDATA)>
+    <!ELEMENT procedimiento (#PCDATA)>

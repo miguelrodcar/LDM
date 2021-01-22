@@ -1,0 +1,16 @@
+<!--Se añade llamada al dtd-->
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE receta SYSTEM "receta2.dtd">
+
+<receta>
+<!--
+    Comentada la linea con el elemento parrafo 
+    al no estar declarado en el dtd correspondiente
+
+    <parrafo>Esto es un párrafo</parrafo>
+-->
+    <titulo>...</titulo>
+    <ingredientes>...</ingredientes>
+    <procedimiento>...</procedimiento>
+    
+</receta>

@@ -1,0 +1,11 @@
+<!--Se añade llamada al dtd-->
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE aviso SYSTEM "aviso.dtd">
+
+<aviso>
+    <titulo>...</titulo>
+    <parrafo>...</parrafo>
+    <grafico>...</grafico>
+    <parrafo>...</parrafo>
+    <grafico>...</grafico>
+</aviso>

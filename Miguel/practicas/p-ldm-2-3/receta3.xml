@@ -1,0 +1,13 @@
+<!--Se añade llamada al dtd-->
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE receta SYSTEM "receta3.dtd">
+
+<!--Incluido elemento titulo el cual solo estaba presente en el dtd-->
+<receta>
+
+    <titulo>...</titulo>
+    <ingredientes>...</ingredientes>
+    <procedimiento>...</procedimiento>
+
+</receta>
+
