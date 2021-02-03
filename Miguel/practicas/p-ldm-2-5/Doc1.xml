@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+<nota
+    xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml Doc1.xsd">
+    
+    <para>Pedro</para> 
+    <de>Laura</de> 
+    <titulo>Recordatorio</titulo> 
+    <contenido>A las 7:00 en la puerta del teatro</contenido> 
+</nota> 
