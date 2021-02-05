@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.w3schools.com"
+    xmlns="https://www.w3schools.com"
+    elementFormDefault="qualified">
+
+        <xs:element name="matricula">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="curso">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="fp" type="xs:string"/>
+                                <xs:element name="modulo">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="nombre" type="xs:string"/>
+                                            <xs:element name="horas" type="xs:integer"/>
+                                            <xs:element name="obligatorio" type="xs:boolean"/>
+                                            <xs:element name="fecha_inicio" type="xs:string"/>
+                                            <xs:element name="fecha_fin" type="xs:string"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="alumnos">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="nombre" type="xs:string"/>
+                                <xs:element name="apellidos" type="xs:string"/>
+                                <xs:element name="nif" type="xs:string"/>
+                                <xs:element name="telefono" type="xs:integer"/>
+                                <xs:element name="email" type="xs:string"/>
+                                <xs:element name="direccion" type="xs:string"/>
+                                <xs:element name="ciudad" type="xs:string"/>
+                                <xs:element name="cp" type="xs:integer"/>
+                                <xs:element name="nota" type="xs:string"/>
+                                <xs:element name="faltas" type="xs:string"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+</xs:schema>
+                                
+
+
+
+

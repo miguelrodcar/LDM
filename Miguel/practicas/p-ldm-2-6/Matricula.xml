@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<matricula
+    xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml Matricula.xsd">
+
+    <curso>
+        <fp>DAM</fp>
+        <modulo>
+            <nombre>LDM</nombre>
+            <horas>4</horas>
+            <obligatorio>1</obligatorio>
+            <fecha_inicio>15 Septiembre 2020</fecha_inicio>
+            <fecha_fin>30 Junio 2021</fecha_fin>
+        </modulo>
+    </curso>
+
+    <alumnos>
+
+        <alumno>
+            <nombre>Ana</nombre>
+            <apellidos>Fernandez Gutierrez</apellidos>
+            <nif>16965696L</nif>
+            <telefono>789654321</telefono>
+            <email>ana.fdezgtrrez@hotmail.com</email>
+            <direccion>C/ El Percebe, 13</direccion>
+            <ciudad>Santander</ciudad>
+            <cp>39302</cp>
+            <nota>N/D</nota>
+            <faltas>N/D</faltas>
+        </alumno>
+        
+        <alumno>
+            <nombre>Pepito</nombre>
+            <apellidos>Grillo</apellidos>
+            <nif>98765432H</nif>
+            <telefono>656566555</telefono>
+            <email>yhyh@yahoo.com</email>
+            <direccion>Avd. El Pez, 5</direccion>
+            <ciudad>Suances</ciudad>
+            <cp>39401</cp>
+            <nota>apto</nota>
+            <faltas>0</faltas>
+        </alumno>
+
+    </alumnos>
+
+</matricula>
