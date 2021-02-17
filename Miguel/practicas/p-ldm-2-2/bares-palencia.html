@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="ocio.css">
+    <title>Ocio en Palencia</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <div class="alert alert-info" role="alert">
+        <h1 class="alert-heading">Ocio en {{jsonObject.Ciudad}}</h1>
+        <!--  CAMPOS SIMPLES -->
+        <ul>
+          <li>Ciudad: {{jsonObject.Ciudad}}</li>
+          <li>Comunidad: {{jsonObject.Comunidad}}</li>  
+          <li>Provincia: {{jsonObject.Provincia}}</li>
+          <li>Habitantes: {{jsonObject.Habitantes}}</li>
+      </div>
+      <div class="cabecera">
+        <h2>Bares</h2>
+      </div>
+      <div class="contenido">
+        <ul class="lista" v-for="Bares in jsonObject.Bares">
+          <li class="titulo">{{Bares.Nombre}}</li>
+          <li><b>Coste:</b> {{Bares.Coste}}</li>
+          <li><b>Movilidad reducida:</b> {{Bares.Movilidad}}</li>
+          <li><b>Dirección:</b> {{Bares.Direccion}}</li>
+          <li><b>Tipo:</b> {{Bares.Tipo}}</li>
+          <li><b>Valoración:</b> {{Bares.Recomendable}}</li>
+          <li><b>Ubicación:</b> <a target="_blank" :href="Bares.Ubicacion">Google Maps</a></li>
+          <hr>
+        </ul>
+        <div class="cabecera">
+          <h2>Ocio</h2>
+        </div>
+        <ul class="lista" v-for="Ocio in jsonObject.Ocio">
+            <li class="titulo">{{Ocio.Nombre}}</li>
+            <li><b>Movilidad reducida:</b> </li>
+            <li><b>Direccion: </b>{{Ocio.Direccion}}</li>
+            <li><b>Tipo: </b>{{Ocio.Tipo}}</li>
+            <li><b>Valoración: </b>{{Ocio.Recomendable}}</li>
+            <li><b>Ubicacion: </b><a target="_blank" :href="Ocio.Ubicacion">Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://raw.githubusercontent.com/miguelrodcar/LDM/master/Miguel/practicas/p-ldm-2-2/Ocio.json")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>

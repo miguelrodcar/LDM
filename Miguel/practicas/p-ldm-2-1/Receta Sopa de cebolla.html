@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Receta.css">
+
+    <title>Sopa de Cebolla</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <div class="alert alert-info" role="alert">
+        <h1 class="alert-heading">{{jsonObject.Nombre}}</h1>
+        <!--  CAMPOS SIMPLES -->
+          <p>
+         <b>Comensales:</b> {{jsonObject.Comensales}}
+          </p>  
+      </div>
+      <div class="contenido">
+        <div class="cabecera">
+          <h2>Ingredientes</h2>
+        </div>
+        <ul class="lista" v-for="Ingredientes in jsonObject.Ingredientes">
+          <li><b>{{Ingredientes.Nombre}}</b></li>
+          <li v-if="Ingredientes.Cantidad == '-'">Al gusto</li>
+          <li v-else>{{Ingredientes.Cantidad}} {{Ingredientes.Valor}}</li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://raw.githubusercontent.com/miguelrodcar/LDM/master/Miguel/practicas/p-ldm-2-1/Recetas.json")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>
