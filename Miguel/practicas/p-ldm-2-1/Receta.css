@@ -19,6 +19,18 @@
     list-style: none;
 }
 
-a:visited {
-    color: cornflowerblue;
+table {
+    margin: auto;
+    border: 2px solid #d1ecf1;
+    border-radius: 50%;
+}
+td {
+    padding: .5em;
+    border: 1px solid rgb(127, 255, 212);
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }

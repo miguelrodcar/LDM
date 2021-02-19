@@ -13,23 +13,57 @@
 
   <body>
     <div id="app" class="container">
-        <div class="alert alert-info" role="alert">
+      <div class="alert alert-info" role="alert">
         <h1 class="alert-heading">{{jsonObject.Nombre}}</h1>
         <!--  CAMPOS SIMPLES -->
           <p>
-         <b>Comensales:</b> {{jsonObject.Comensales}}
+          <b>Comensales:</b> {{jsonObject.Comensales}}
           </p>  
       </div>
       <div class="contenido">
         <div class="cabecera">
           <h2>Ingredientes</h2>
         </div>
-        <ul class="lista" v-for="Ingredientes in jsonObject.Ingredientes">
-          <li><b>{{Ingredientes.Nombre}}</b></li>
-          <li v-if="Ingredientes.Cantidad == '-'">Al gusto</li>
-          <li v-else>{{Ingredientes.Cantidad}} {{Ingredientes.Valor}}</li>
-        </ul>
+        <div class="botones">
+          <button @click="showIngredients" v-if="!mostrarIngredients" class="btn btn-primary">Mostrar más</button>
+          <button @click="ocultarIngredients" v-if="mostrarIngredients" class="btn btn-primary">Mostrar menos</button>
+        </div>
+        <table class="tabla" v-if="mostrarIngredients">
+          <thead>
+            <tr>
+              <th scope="col">Ingrediente</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Unidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="Ingredientes in jsonObject.Ingredientes">
+              <td>{{Ingredientes.Nombre}}</td>
+              <td v-if="Ingredientes.Cantidad == '-'">Al gusto</td>
+              <td v-else>{{Ingredientes.Cantidad}}</td>
+              <td>{{Ingredientes.Valor}}</td>
+            </tr>
+          </tbody>
+        </table>
+       
         <hr>
+      
+        <div class="cabecera">
+          <h2>Proceso</h2>
+        </div>
+        <div class="botones">
+          <button @click="showProceso" v-if="!mostrarProceso" class="btn btn-primary">Mostrar más</button>
+          <button @click="ocultarProceso" v-if="mostrarProceso" class="btn btn-primary">Mostrar menos</button>
+        </div>
+
+        <ol v-for="Proceso in jsonObject.Proceso" v-if="mostrarProceso">
+          <li>{{Proceso.Primero}}</li>
+          <li>{{Proceso.Segundo}}</li>
+          <li>{{Proceso.Tercero}}</li>
+          <li>{{Proceso.Cuarto}}</li>
+          <li>{{Proceso.Quinto}}</li>
+          <li>{{Proceso.Sexto}}</li>
+        </ol>
       </div>
     </div>
 
@@ -38,14 +72,28 @@
       const App = new Vue({
         el: '#app',
         data: {
-          jsonObject: {}
+          jsonObject: {},
+          mostrarIngredients: true,
+          mostrarProceso: false,
         },
         methods: {
             init() {
               fetch("https://raw.githubusercontent.com/miguelrodcar/LDM/master/Miguel/practicas/p-ldm-2-1/Recetas.json")
               .then(response => response.json())
               .then(data => (this.jsonObject = data));
-            }
+            },
+            showIngredients(){
+              this.mostrarIngredients = true;
+            },
+            ocultarIngredients(){
+              this.mostrarIngredients = false;
+            },
+            showProceso(){
+              this.mostrarProceso = true;
+            },
+            ocultarProceso(){
+              this.mostrarProceso = false;
+            },
         },
         mounted(){
             this.init()
