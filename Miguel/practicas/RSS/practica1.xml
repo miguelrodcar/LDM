@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+    <channel>
+
+        <title>Practica RSS</title>
+        <description>Random RSS</description>
+    
+
+        <item>
+            <title>Everything We Learned About Diablo from BlizzConline 2021</title>
+            <description>Diablo has re-emerged as the sinister gothic capstone of BlizzConline 2021!</description>
+            <link>https://www.wowhead.com/news=321086/everything-we-learned-about-diablo-from-blizzconline-2021</link>
+        </item>
+
+        <item>
+            <title>Diablo 3 Patch 2.7.0 Preview: Follower System Revamp</title>
+            <description>Patch 2.7.0 will be deployed on the PTR on February 25.</description>
+            <link>https://www.icy-veins.com/forums/topic/56798-diablo-3-patch-270-preview-follower-system-revamp/</link>
+        </item>
+
+        <item>
+            <title>Anunciado el juego de mesa de Stardew Valley</title>
+            <description>Un juego cooperativo para 1-4 jugadores que, por ahora, solo se vende en EE UU.</description>
+            <link>https://www.mediavida.com/foro/juegos-mesa-rol/anunciado-juego-mesa-stardew-valley-669077</link>
+        </item>
+
+
+    </channel>
+
+</rss>
