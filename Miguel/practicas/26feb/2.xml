@@ -1,0 +1,11 @@
+<?xml version="1.0"encoding="UTF-8"?>
+<!-- separada 'duracion' de etiqueta raiz 'cancion'-->
+<cancion>
+    <duracion>01:56</duracion>
+<!-- eliminada acentuacion de etiqueta 'titulo'-->
+    <titulo>Do you want to know a secret</titulo>
+<!-- corregidos pares de etiquetas 'musica' y 'letra'-->
+    <musica>John Lennon</musica>
+    <letra>John Lennon</letra> 
+<!-- cerrada etiqueta raiz 'cancion'-->
+</cancion>

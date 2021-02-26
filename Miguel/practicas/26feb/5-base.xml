@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE listado [
+ <!ELEMENT listado (peliculas, cines)>
+ <!ELEMENT peliculas (pelicula+)>
+ <!ELEMENT pelicula (titulo, estreno, director, identificador)>
+ 
+]>
+
+<listado>
+    <peliculas>
+        <pelicula>
+            <titulo>La invención de Hugo</titulo>
+            <estreno>2011</estreno>
+            <director>Martin Scorsese</director>
+            <identificador>LIdH_MS</identificador>
+        </pelicula>
+        <pelicula>
+            <titulo>John Carter</titulo>
+            <estreno>2012</estreno>
+            <director>Andrew Stanton</director>
+            <identificador>JC_AS</identificador>
+        </pelicula>
+        <pelicula>
+            <titulo>Intocable</titulo>
+            <estreno>2011</estreno>
+            <director>Olivier Nakache</director>
+            <identificador>I_ON</identificador>
+        </pelicula>
+
+    </peliculas>
+
+    <cines>
+        <cine>
+            <nombre>ABC El Saler</nombre>
+            <sala>6</sala>
+            <identificador>LIdH_MS</identificador>
+            <sesiones>
+                <sesion>18:00</sesion>
+                <sesion>20:25</sesion>
+                <sesion>22:50</sesion>
+            </sesiones>
+        </cine>
+        <cine>
+            <nombre>Lys</nombre>
+            <sala>3</sala>
+            <identificador>JC_AS</identificador>
+            <sesiones>
+                <sesion>16:20</sesion>
+                <sesion>18:50</sesion>
+            </sesiones>
+        </cine>
+
+    </cines>
+
+
+</listado>

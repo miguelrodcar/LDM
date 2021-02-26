@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- añadidos espacios en blanco
+     modificado 'tamaño' por 'size'
+     sustituido ID por CDATA en '!ATTLIST sudo size'
+     modificado '!DOCTYPE sudoku' por 'sudokus'
+     añadido elemento 'sudokus'
+     modificado atributo '#REQUIRED' por '#IMPLIED' en 'sudoku solucion'
+     modificado valor '?' por '*' en el elemento 'sudoku (dato?)'
+     modificado atributo '#REQUIRED' por '#IMPLIED' en 'dato celda'
+     modificado atributo '#REQUIRED' por '#IMPLIED' en 'dato valor'
+     modificado atributo 'ENTITY' por 'CDATA' en 'dato valor'
+     modificado valor '(sudoku)' por (sudoku+) en elemento 'sudokus'-->
+<!DOCTYPE sudokus [ 
+ <!ELEMENT sudokus (sudoku+)>
+ <!ELEMENT sudoku (dato*)>
+ <!ELEMENT dato (#PCDATA)>
+ <!ATTLIST sudoku size CDATA #REQUIRED>
+ <!ATTLIST sudoku solucion NMTOKEN #IMPLIED>
+ <!ATTLIST dato celda NMTOKEN #IMPLIED>
+ <!ATTLIST dato valor CDATA #IMPLIED>]>
+ 
+ <sudokus>
+    <sudoku size="4x4"></sudoku>
+
+    <sudoku size="4x4" solucion="1">
+        <dato celda="A2" valor="1"/>
+        <dato celda="B2" valor="2"/>
+        <dato celda="A3" valor="3"/>
+        <dato celda="D4" valor="1"/>
+    </sudoku>
+
+ </sudokus>
