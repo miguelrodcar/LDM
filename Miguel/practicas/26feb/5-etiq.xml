@@ -4,6 +4,16 @@
  <!ELEMENT listado (peliculas, cines)>
  <!ELEMENT peliculas (pelicula+)>
  <!ELEMENT pelicula (titulo, estreno, director, identificador)>
+ <!ELEMENT cines (cine+)>
+ <!ELEMENT cine (nombre, sala, identificador, sesiones)>
+ <!ELEMENT sesiones (sesion+)>
+ <!ELEMENT titulo (#PCDATA)>
+ <!ELEMENT estreno (#PCDATA)>
+ <!ELEMENT director (#PCDATA)>
+ <!ELEMENT identificador (#PCDATA)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT sala (#PCDATA)>
+ <!ELEMENT sesion (#PCDATA)>
  
 ]>
 

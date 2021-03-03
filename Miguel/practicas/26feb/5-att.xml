@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE listado [
+    <!ELEMENT listado (peliculas, cines)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (#PCDATA)>
+    <!ELEMENT cines (cine+)>
+    <!ELEMENT cine (sesiones+)>
+    <!ELEMENT sesiones (sesion+)>
+    <!ATTLIST pelicula titulo CDATA #REQUIRED>
+    <!ATTLIST pelicula estreno CDATA #REQUIRED>
+    <!ATTLIST pelicula director CDATA #REQUIRED>
+    <!ATTLIST pelicula identificador NMTOKEN #REQUIRED>
+    <!ATTLIST cine nombre CDATA #REQUIRED>
+    <!ATTLIST cine sala CDATA #REQUIRED>
+    <!ATTLIST cine identificador NMTOKEN #REQUIRED>
+    <!ELEMENT sesion (#PCDATA)>
+ 
+]>
+
+<listado>
+    <peliculas>
+        <pelicula titulo="La invención de Hugo" estreno="2011" director="Martin Scorsese" identificador="LIdH_MS"/>
+        <pelicula titulo="John Carter" estreno="2012" director="Andrew Stanton" identificador="JC_AS"/>
+        <pelicula titulo="Intocable" estreno="2011" director="Olivier Nakache" identificador="I_ON"/>
+    </peliculas>
+
+    <cines>
+        <cine nombre="ABC El Saler" sala="6" identificador="LIdH_MS">
+            <sesiones>
+                <sesion>18:00</sesion>
+                <sesion>20:25</sesion>
+                <sesion>22:50</sesion>
+            </sesiones>
+        </cine>
+        <cine nombre="Lys" sala="3" identificador="JC_AS">
+            <sesiones>
+                <sesion>16:20</sesion>
+                <sesion>18:50</sesion>
+            </sesiones>
+        </cine>
+
+    </cines>
+
+
+</listado>

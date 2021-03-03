@@ -1,0 +1,56 @@
+{
+    "Pelicula": [
+        {
+            "Titulo": "La invención de Hugo",
+            "Estreno": "2011",
+            "Director": "Martin Scorsese",
+            "Identificador": "LiDH_MS"
+        },
+        {
+            "Titulo": "John Carter",
+            "Estreno": "2012",
+            "Director": "Andrew Stanton",
+            "Identificador": "JC_AS"
+        },
+        {
+            "Titulo": "Intocable",
+            "Estreno": "2011",
+            "Director": "Olivier Nakache",
+            "Identificador": "I_ON"
+        }
+    ],
+    "Cine": [
+        {
+           "Nombre": "ABC El Saler",
+           "Sala": "6",
+           "Identificador": "LiDH_MS",
+           "Sesiones": [
+               {
+                   "Sesion": "18:00"
+                },
+                {
+                   "Sesion": "20:25"
+                },
+                {
+                   "Sesion": "22:50"
+                }
+               
+            ]
+        },
+        {
+            "Nombre": "Lys",
+            "Sala": "3",
+            "Identificador": "JC_AS",
+            "Sesiones": [
+                {
+                    "Sesion": "16:20"
+                },
+                {
+                    "Sesion": "18:50"
+                }
+                
+            ]
+        }
+    ]
+
+}
