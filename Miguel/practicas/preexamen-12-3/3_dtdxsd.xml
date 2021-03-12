@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formula1 anyo="2011"
+    xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml 3_dtdxsd.xsd">
+<carrera>
+  <nombre>GP de Mónaco</nombre>
+  <fecha><dia>29</dia> de <mes>mayo</mes> de <ano>2011</ano></fecha>
+  <podium>
+    <orden n="1" nombre="Sebastian Vettel" escudería="Red Bull"/>
+    <orden n="2" nombre="Fernando Alonso" />
+    <orden n="3" nombre="Jenson Button" />
+  </podium>
+</carrera>
+</formula1>

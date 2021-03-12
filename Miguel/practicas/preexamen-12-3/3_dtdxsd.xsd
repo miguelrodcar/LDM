@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.w3schools.com"
+    xmlns="https://www.w3schools.com"
+    elementFormDefault="qualified">
+
+    <xs:element name="formula1">
+        <xs:attribute name="anyo" type="xs:integer"/>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="carrera">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="fecha">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia" type="xs:integer"/>
+                                        <xs:element name="mes" type="xs:string"/>
+                                        <xs:element name="ano" type="xs:integer"/> 
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="podium">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="orden">
+                                            <xs:complexType>
+                                                <xs:attribute name="n" type="xs:integer"/>
+                                                <xs:attribute name="nombre" type="xs:string"/>
+                                                <xs:attribute name="escuderia" type="xs:string"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

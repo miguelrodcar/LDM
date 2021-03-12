@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>VUEJS</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <!--
+        {{jsonObject}}
+      -->
+
+      <div v-for="drink in jsonObject.drinks">
+        <h1>{{drink.strDrink}}</h1>
+        <a :href="'https://es.wikipedia.org/wiki/'+drink.strDrink" target="_blank"><img width="300px" :src="drink.strDrinkThumb" alt=""/></a>
+        <ul>
+          <li v-if="drink['strIngredient'+n]" v-for="n in 15">
+            {{drink['strIngredient'+n]}} <span v-if="drink['strMeasure'+n]">{{drink['strMeasure'+n]}}</span></li>
+         
+        </ul>
+        <p>
+          {{drink.strInstructions}}
+        </p>
+      </div>
+    </div>
+
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>
