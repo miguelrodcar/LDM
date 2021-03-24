@@ -20,7 +20,7 @@
         <br>
         <span v-if="checkedBeers.length > 0">He probado las cervezas: {{checkedBeers}}</span>
         <span v-else> No he probado ninguna cerveza</span>
-
+        <p class=btn @click="checkedBeers=[]" style="border: 1px solid black;">Borrar</p>
         <div v-for="beer in jsonObject" class="card" style="background-color: rgb(187, 187, 187);">
 
 
