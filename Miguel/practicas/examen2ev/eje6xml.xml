@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE userdata [
+<!ELEMENT userdata (user, playlists, favourites, albums)>
+<!ELEMENT user (user_id, username, country)>
+<!ELEMENT user_id (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+
+<!ELEMENT playlists (pl_id, pl_name, pl_songs)>
+<!ELEMENT pl_id (#PCDATA)>
+<!ELEMENT pl_name (#PCDATA)>
+<!ELEMENT pl_songs (song+)>
+<!ELEMENT song (song_id, song_name, song_length, song_genre)>
+<!ELEMENT song_id (#PCDATA)>
+<!ELEMENT song_name (#PCDATA)>
+<!ELEMENT song_length (#PCDATA)>
+<!ELEMENT song_genre (#PCDATA)>
+<!ELEMENT favourites (song+)>
+<!ELEMENT albums (al_name, al_artist, al_genre, al_songs)>
+<!ELEMENT al_name (#PCDATA)>
+<!ELEMENT al_artist (#PCDATA)>
+<!ELEMENT al_genre (#PCDATA)>
+<!ELEMENT al_songs (song+)>
+]>
+
+<userdata>
+    <user>
+        <user_id>U_8827</user_id>
+        <username>Snarl</username>
+        <country>Spain</country>
+    </user>
+    <playlists>
+        <pl_id>PL_1984</pl_id>
+        <pl_name>Neon Nights</pl_name>
+        <pl_songs>
+            <song>
+                <song_id>S_33</song_id>
+                <song_name>Nocturnal</song_name>
+                <song_length>6:14</song_length>
+                <song_genre>Synthwave</song_genre>
+            </song>
+            <song>
+                <song_id>S_34</song_id>
+                <song_name>Lost Boy</song_name>
+                <song_length>4:36</song_length>
+                <song_genre>Retrowave</song_genre>
+            </song>
+            <song>
+                <song_id>S_35</song_id>
+                <song_name>Tokyo Night Train</song_name>
+                <song_length>7:34</song_length>
+                <song_genre>Instrumental</song_genre>
+            </song>
+        </pl_songs>
+    </playlists>
+    <favourites>
+        <song>
+            <song_id>S_55</song_id>
+            <song_name>Fire</song_name>
+            <song_length>2:56</song_length>
+            <song_genre>Hardcore</song_genre>
+        </song>
+        <song>
+            <song_id>S_22</song_id>
+            <song_name>Fear</song_name>
+            <song_length>7:14</song_length>
+            <song_genre>Minimal</song_genre>
+        </song>
+        <song>
+            <song_id>S_77</song_id>
+            <song_name>Under the Ice</song_name>
+            <song_length>6:33</song_length>
+            <song_genre>Power Metal</song_genre>
+        </song>
+    </favourites>
+    <albums>
+        <al_name>Kids</al_name>
+        <al_artist>The Midnight</al_artist>
+        <al_genre>Retrowave</al_genre>
+        <al_songs>
+            <song>
+                <song_id>S_112</song_id>
+                <song_name>Explorers</song_name>
+                <song_length>3:45</song_length>
+                <song_genre>Retrowave</song_genre>
+            </song>
+            <song>
+                <song_id>S_113</song_id>
+                <song_name>America 2</song_name>
+                <song_length>4:01</song_length>
+                <song_genre>Retrowave</song_genre>
+            </song>
+            <song>
+                <song_id>S_84</song_id>
+                <song_name>Wave</song_name>
+                <song_length>5:09</song_length>
+                <song_genre>Retrowave</song_genre>
+            </song>
+        </al_songs>
+    </albums>
+</userdata>

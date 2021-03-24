@@ -1,0 +1,84 @@
+{
+    "userdata": {
+      "user": {
+        "user_id": "U_8827",
+        "username": "Snarl",
+        "country": "Spain"
+      },
+      "playlists": {
+        "pl_id": "PL_1984",
+        "pl_name": "Neon Nights",
+        "pl_songs": {
+          "song": [
+            {
+              "song_id": "S_33",
+              "song_name": "Nocturnal",
+              "song_length": "6:14",
+              "song_genre": "Synthwave"
+            },
+            {
+              "song_id": "S_34",
+              "song_name": "Lost Boy",
+              "song_length": "4:36",
+              "song_genre": "Retrowave"
+            },
+            {
+              "song_id": "S_35",
+              "song_name": "Tokyo Night Train",
+              "song_length": "7:34",
+              "song_genre": "Instrumental"
+            }
+          ]
+        }
+      },
+      "favourites": {
+        "song": [
+          {
+            "song_id": "S_55",
+            "song_name": "Fire",
+            "song_length": "2:56",
+            "song_genre": "Hardcore"
+          },
+          {
+            "song_id": "S_22",
+            "song_name": "Fear",
+            "song_length": "7:14",
+            "song_genre": "Minimal"
+          },
+          {
+            "song_id": "S_77",
+            "song_name": "Under the Ice",
+            "song_length": "6:33",
+            "song_genre": "Power Metal"
+          }
+        ]
+      },
+      "albums": {
+        "al_name": "Kids",
+        "al_artist": "The Midnight",
+        "al_genre": "Retrowave",
+        "al_songs": {
+          "song": [
+            {
+              "song_id": "S_112",
+              "song_name": "Explorers",
+              "song_length": "3:45",
+              "song_genre": "Retrowave"
+            },
+            {
+              "song_id": "S_113",
+              "song_name": "America 2",
+              "song_length": "4:01",
+              "song_genre": "Retrowave"
+            },
+            {
+              "song_id": "S_84",
+              "song_name": "Wave",
+              "song_length": "5:09",
+              "song_genre": "Retrowave"
+            }
+          ]
+        }
+      }
+    }
+}

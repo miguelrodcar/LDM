@@ -15,10 +15,30 @@
 <body>
     <div id="app" class="container">
         {{jsonObject.name}}
-        <div v-for="jaj in jsonObject">
+        <p class=btn @click="btnFlag=true" style="border: 1px solid black;">Ver imagenes</p>
+        <p class=btn @click="btnFlag=false" style="border: 1px solid black;">Ocultar imagenes</p>
+        <br>
+        <span v-if="checkedBeers.length > 0">He probado las cervezas: {{checkedBeers}}</span>
+        <span v-else> No he probado ninguna cerveza</span>
 
-            {{jaj.name}}
+        <div v-for="beer in jsonObject" class="card" style="background-color: rgb(187, 187, 187);">
+
+
+
+                <h1>{{beer.name}}</h1>
+                
+                <img width="10%" :src="beer.image_url" alt="" v-show="btnFlag">
+                <h3>{{beer.tagline}}</h3>
+                <p>
+                Alcoholic value: {{beer.abv}}
+                <br>
+                
+                <input type="checkbox" :id="beer.name" :value="beer.name" v-model="checkedBeers">
+                <label :for="beer.name">He probado {{beer.name}}</label>
+                </p>
+
         </div>
+       
 
 
 
@@ -33,7 +53,9 @@
     const App = new Vue({
         el: '#app',
         data: {
-            jsonObject: {}
+            jsonObject: {},
+            btnFlag: true,
+            checkedBeers: []
         },
         methods: {
             init() {

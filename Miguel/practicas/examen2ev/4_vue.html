@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Examen Segunda evaluación</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+ 
+    <div v-for="serie in jsonObject">
+
+       <h1>{{serie.show.name}}</h1>
+
+        <a  :href="serie.show.officialSite" target="_blank">
+        <span v-for="imagen in serie.show.image" v-if="imagen !== null">
+          <!--  <img :src="serie.show.image.medium" alt=""> -->
+        </span>
+    </a>
+    <img v-if="serie.show.image" :src="serie.show.image.medium" alt="">
+
+
+       <strong>
+           <br>
+            Puntuación: {{serie.score}}
+            <br>
+            <div v-if="serie.show.type == 'Sports'" style="color: blue;">
+            Tipo: {{serie.show.type}}
+            </div>
+            <div v-else style="color: red;">
+                Tipo: {{serie.show.type}}
+            </div>
+            <br>
+            Idioma: {{serie.show.language}}
+       </strong>
+       <span v-if="serie.show.genres !== '[]'">
+       <br>
+       Genero:
+       <ol>
+           <li >{{serie.show.genres}}</li>
+       </ol>
+    </span>
+    <span v-else> No genres to show</span>
+    </div>
+    
+    </div>
+</body>
+
+
+<script>
+
+    const App = new Vue({
+        el: '#app',
+        data: {
+            jsonObject: {}
+        },
+        methods: {
+            init() {
+                fetch("http://api.tvmaze.com/search/shows?q=sports")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted() {
+            this.init()
+        }
+    })
+</script>
+
+</html>
